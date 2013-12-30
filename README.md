@@ -206,6 +206,7 @@ public class CalculatorServiceTestCase  {
 [CalculatorServiceTestCase.java](/src/test/java/org.opensourcesoftwareandme/CalculatorServiceTestCase.java)
 
 `testCalculatorService` is annotated with `@Test` which instructs the JUnit runner to execute the test. What the test does is simple:
+
 1. It loads the test suite and mock Web Service configurations from the SoapUI project `calculator-soapui-project.xml`
 2. Launch the mock Web Service
 3. Execute the test suite
