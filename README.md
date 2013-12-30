@@ -5,12 +5,15 @@ There is no doubt that [SoapUI](http://www.soapui.org/) is a superb tool for tes
 Since SoapUI is a Java application, test suites can be invoked directly from JUnit removing the need for human intervention. On my GitHub page, I've uploaded a project that demonstrates how to do this. The project has a JUnit test case that launches a SoapUI mock Web Service and then invokes the test suite for it. Let me give a brief overview on how I went about developing the project.
 
 The first step was to set up a SoapUI project and test suite based on a WSDL. There's plenty of [documentation online](http://www.soapui.org/Functional-Testing/structuring-and-running-tests.html) on how to do this. In the test suite, I created a test case for each WSDL operation:
+
 ![](calculator-ws-test-suite.png)
 
 For every test case, I asserted that the SOAP response isn't a SOAP fault, complies with the schema, it's a valid SOAP response and the outcome of the operation is correct:
+
 ![](add-operation-test-case.png)
 
 The next step was to create a mock Web Service in the same project so I have something to run the test suite against. Again, there is [documentation](http://www.soapui.org/Getting-Started/mock-services.html) out there on this.
+
 ![](mock-ws.png)
 
 Now it was time to start developing the JUnit test case. I could have imported into my Java project the SoapUI libraries from the SoapUI distribution. But being a sadist, I decided to use Maven :P 
