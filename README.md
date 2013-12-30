@@ -13,7 +13,9 @@ For every test case, I asserted that the SOAP response isn't a SOAP fault, compl
 The next step was to create a mock Web Service in the same project so I have something to run the test suite against. Again, there is [documentation](http://www.soapui.org/Getting-Started/mock-services.html) out there on this.
 ![](mock-ws.png)
 
-Now it was time to start developing the JUnit test case. I could have imported into my Java project the SoapUI libraries from the SoapUI distribution. But being a sadist, I decided to use Maven : P. In the project's POM, I declared the repo where to find SoapUI and its dependencies:
+Now it was time to start developing the JUnit test case. I could have imported into my Java project the SoapUI libraries from the SoapUI distribution. But being a sadist, I decided to use Maven :P 
+
+In the [project's POM](/pom.xml), I declared the repo where to find SoapUI and its dependencies:
 
 ```xml
 <repositories>
