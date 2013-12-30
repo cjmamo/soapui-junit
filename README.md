@@ -216,3 +216,6 @@ public class CalculatorServiceTestCase  {
 2. Launch the mock Web Service
 3. Execute the test suite
 You can run the test by typing in your console `mvn test` in the project root directory.
+
+
+Also you can find example of [parametrized runner](http://www.javamonamour.org/2010/07/soapui-junit-and-functional-tests.html)
